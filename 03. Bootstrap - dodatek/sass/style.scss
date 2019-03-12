@@ -1,0 +1,754 @@
+/* Variables */
+$color-green: #17D9A3;
+$border-green: #17d9a28c;
+$color-white: #fff;
+$color-dark-grey: #576671;
+$color-mid-grey: #95A0A9;
+$color-light-grey: #EDEFF0;
+$bg-grey: #F9F9FA;
+
+/* Global */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  border: 1px solid $color-light-grey;
+}
+
+.btn-custom {
+  width: 160px;
+  border: 2px solid $color-green;
+  border-radius: 20px;
+  background-color: $color-green;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
+  color: $color-white;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 100;
+  color: $color-dark-grey;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title::after {
+  position: absolute;
+  display: block;
+  content: '';
+  bottom: -30px;
+  left: 50%;
+  width: 40px;
+  height: 1px;
+  margin-left: -20px;
+  background: $color-green;
+}
+
+.section-subtitle {
+  font-size: 2.6rem;
+  font-weight: 100;
+  color: $color-dark-grey;
+  margin-bottom: 40px;
+}
+
+.top-paragraph,
+.paragraph,
+.card-text,
+.plan-description {
+  font-size: 0.9rem;
+  color: $color-mid-grey;
+}
+
+.paragraph,
+.plan-description {
+  line-height: 2;
+}
+
+/* Navigation */
+.main-navbar {
+  color: #fff;
+  z-index: 1;
+}
+
+.main-navbar .navbar-brand {
+  font-size: 1.5rem;
+  color: $color-white;
+}
+
+.main-navbar .navbar-brand span {
+  color: $color-green;
+}
+
+.main-navbar .navbar-menu .nav-link {
+  font-size: 0.75rem;
+  color: $color-white;
+  text-transform: uppercase;
+}
+
+.main-navbar .btn-search {
+  color: $color-white;
+}
+
+.main-navbar .navbar-toggler {
+  border-color: $color-white;
+}
+
+.main-navbar .navbar-toggler .navbar-toggler-icon {
+  color: $color-white;
+}
+
+/* Header */
+.splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65vh;
+  background: no-repeat url("https://i.postimg.cc/T1BmB8J8/header-bg.jpg") center center / cover;
+}
+
+.inner-splash {
+  min-width: 70vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page-title,
+.inner-splash p {
+  color: $color-white;
+}
+
+.page-title {
+  font-size: 3.2rem;
+  font-weight: 100;
+}
+
+.page-title span {
+  font-weight: 700;
+}
+
+.splash a {
+  width: 160px;
+  margin-top: 4rem;
+  padding: 6px 10px;
+  border: 2px solid $color-white;
+  border-radius: 20px;
+}
+
+/* About us */
+
+.about {
+  margin-top: 60vh;
+}
+
+.about p {
+  margin-bottom: 100px;
+}
+
+.wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: $color-light-grey;
+  border-radius: 50%;
+}
+
+.about .card:nth-child(2) .wrap {
+  background-color: $color-green;
+}
+
+.wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+.photo {
+  background-color: $bg-grey;
+}
+
+.photo-image {
+  max-width: 400px;
+}
+
+.photo-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.computer-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Founder */
+
+.founder {
+  height: 500px;
+  background: no-repeat url("https://i.postimg.cc/6pJn0XQn/who-bg.jpg") center center / cover;
+}
+
+.founder img {
+  width: 100px;
+}
+
+.founder h5 {
+  color: $color-white;
+}
+
+.founder p {
+  color: $color-mid-grey;
+}
+
+.founder h5,
+.founder p {
+  font-weight: 100;
+}
+
+.founder h5 span,
+.founder p span {
+  font-weight: 400;
+}
+
+.founder h5 span {
+  color: $color-green;
+}
+
+/* Our services */
+
+.services {
+  background-color: $bg-grey;
+}
+
+.service-image {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: $color-white;
+}
+
+.service-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Our team */
+
+.team {
+  padding-bottom: 0;
+}
+
+.team-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-image {
+  position: relative;
+  flex: auto;
+  width: 20%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.team-image:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: $color-green;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.team-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.team-image p {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  font-weight: 200;
+  text-align: center;
+  color: $color-light-grey;
+  text-shadow: 2px 2px 2px $color-dark-grey;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.team-image:hover p {
+  display: block;
+}
+
+/* Pricing */
+
+.pricing {
+  background-color: $bg-grey;
+}
+
+.plans-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.price-plan {
+  flex-basis: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px;
+  background-color: $color-white;
+  border: 1px solid $border-green;
+  border-radius: 5px;
+}
+
+.plan-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan-list li,
+.buy-buttons {
+  padding: 20px;
+}
+
+.plan-header {
+  border-bottom: 1px solid $bg-grey;
+}
+
+.price {
+  font-size: 2.4rem;
+  font-weight: 100;
+  color: $color-green;
+}
+
+.price-tag {
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #CED2D6;
+}
+
+.plan-description {
+  min-height: 120px;
+}
+
+.buy-buttons {
+  background-color: $color-green;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.buy-buttons a {
+  color: $color-white;
+  text-decoration: none;
+}
+
+/* Places */
+
+.map-image {
+  position: relative;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.map-image img {
+  width: 105%;
+  height: auto;
+  object-fit: cover;
+}
+
+.place {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: $color-green;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.place::after {
+  position: absolute;
+  bottom: 10px;
+  right: -50%;
+  transform: translateX(50%);
+  content: attr(tooltip);
+  font-size: 0.75rem;
+  color: $color-dark-grey;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+}
+
+.place:hover::after {
+  opacity: 1;
+}
+
+.perth {
+  bottom: 65px;
+  right: 60px;
+}
+
+.san-francisco {
+  top: 122px;
+  left: 97px;
+}
+
+.new-york {
+  top: 130px;
+  left: 162px;
+}
+
+.mexico {
+  top: 178px;
+  left: 154px;
+}
+
+.winnipeg {
+  top: 97px;
+  left: 121px;
+}
+
+.murmansk {
+  top: 49px;
+  left: 317px;
+}
+
+.london {
+  top: 73px;
+  left: 276px;
+}
+
+.warsaw {
+  top: 81px;
+  left: 308px;
+}
+
+.barcelona {
+  top: 105px;
+  left: 284px;
+}
+
+.bucharest {
+  top: 97px;
+  left: 316px;
+}
+
+.roma {
+  top: 113px;
+  left: 308px;
+}
+
+.tel-aviv {
+  top: 121px;
+  left: 349px;
+}
+
+.mecca {
+  top: 137px;
+  left: 349px;
+}
+
+.dubai {
+  top: 145px;
+  left: 373px;
+}
+
+.islamabad {
+  top: 121px;
+  left: 406px;
+}
+
+/* Offer */
+
+.offer {
+  position: relative;
+  height: 500px;
+  background: no-repeat url("https://i.postimg.cc/MKj1VTzz/try-bg.jpg") center bottom / cover;
+}
+
+.offer-wrapper {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.offer h5 {
+  font-size: 3rem;
+  color: $color-white;
+}
+
+.offer h5 {
+  font-weight: 100;
+}
+
+.offer h5 span {
+  font-weight: 700;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  height: 500px;
+  background: no-repeat url("https://i.postimg.cc/s2N0LSR8/a.png") center bottom;
+}
+
+.footer-image {
+  width: 20px;
+  height: 20px;
+}
+
+.rights p {
+  color: $color-mid-grey;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+
+  .team-image {
+    width: 24%;
+  }
+
+  .team-image:nth-last-child(1),
+  .team-image:nth-last-child(2) {
+    display: none;
+  }
+
+  .price-plan {
+    flex-basis: 45%;
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 30px 0;
+  }
+
+  .splash {
+    height: 100vh;
+  }
+
+  .about {
+    margin-top: 100vh;
+  }
+
+  .team-image {
+    width: 32%;
+  }
+
+  .team-image:nth-last-child(2) {
+    display: block;
+  }
+
+  .price-plan {
+    flex-basis: 45%;
+    margin: 20px 10px;
+  }
+
+  .offer h5 {
+    font-size: 2rem;
+    color: $color-white;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .splash {
+    height: 100vh;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .lead.splash-paragraph {
+    font-size: 1rem;
+  }
+
+  .splash a {
+    margin-top: 2rem;
+  }
+
+  .about {
+    margin-top: 100vh;
+  }
+
+  .team-image {
+    width: 50%;
+  }
+
+  .team-image:nth-last-child(1),
+  .team-image:nth-last-child(2),
+  .team-image:nth-last-child(3),
+  .team-image:nth-last-child(4) {
+    display: none;
+  }
+
+  .price-plan {
+    flex-basis: 90%;
+  }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+
+  section {
+    padding: 60px 0;
+  }
+
+  .splash {
+    height: 100vh;
+  }
+
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .splash a {
+    margin-top: 4rem;
+  }
+
+  .about {
+    margin-top: 100vh;
+  }
+}
+
+@media (max-width: 992px) and (orientation: landscape) {
+
+  section {
+    padding: 60px 0;
+  }
+
+  .splash {
+    height: 100vh;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .lead.splash-paragraph {
+    font-size: 1rem;
+  }
+
+  .splash a {
+    margin-top: 2rem;
+  }
+
+  .about {
+    margin-top: 100vh;
+  }
+
+  .team-image {
+    width: 32%;
+  }
+
+  .team-image:nth-last-child(1) {
+    display: none;
+  }
+
+  .team-image:nth-last-child(2) {
+    display: block;
+  }
+
+  .price-plan {
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+
+  section {
+    padding: 40px 0;
+  }
+
+  .splash {
+    height: 100vh;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+
+  .splash a {
+    margin-top: 2rem;
+  }
+
+  .inner-splash {
+    min-width: 60vw;
+  }
+
+  .lead.splash-paragraph {
+    font-size: 1rem;
+  }
+
+  .about {
+    margin-top: 100vh;
+  }
+
+  .team-image:nth-last-child(1) {
+    display: none;
+  }
+
+  .team-image:nth-last-child(1),
+  .team-image:nth-last-child(2),
+  .team-image:nth-last-child(3) {
+    display: block;
+  }
+
+}

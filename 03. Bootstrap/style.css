@@ -1,0 +1,117 @@
+:root {
+  --dark-red: #b13b20;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+.navbar-brand.custom {
+  color: var(--dark-red);
+  font-weight: 700;
+}
+
+.dropdown-item {
+  font-weight: 200;
+}
+
+.btn.btn-custom {
+  background-color: var(--dark-red);
+  color: #fff;
+}
+
+.carousel-inner .carousel-item {
+  height: 60vh;
+}
+
+.carousel-inner .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-caption h3,
+.carousel-caption h4 {
+  font-weight: 400;
+  text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-title.item-name {
+  color: #fff;
+  text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black;
+}
+
+.contact {
+  background-color: #d7d7d7;
+}
+
+.contact .social,
+#email {
+  color: var(--dark-red);
+}
+
+.page-footer {
+  background-color: #b3b3b3;
+}
+
+.page-footer a {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: var(--dark-red);
+}
+
+@media (min-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-caption h3 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 520px) and (orientation: landscape) {
+  .carousel-inner .carousel-item {
+    height: 100vh;
+  }
+
+  .carousel-caption h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+
+  .carousel-caption h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+
+  .carousel-caption h3 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1140px) and (orientation: landscape) {
+
+  .carousel-inner .carousel-item {
+    height: 80vh;
+  }
+}
