@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfd9c1;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1,
+p {
+  margin: 30px;
+  ;
+}
+
+h1 {
+  font-size: 40px;
+  color: darkred;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #543a2a;
+}
+
+p::first-letter {
+  font-weight: bold;
+}
