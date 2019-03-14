@@ -3,14 +3,6 @@
 # Created by https://www.gitignore.io/api/adobe,node,osx,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=adobe,node,osx,visualstudiocode
 
-### Adobe ###
-# Adobe Source Files
-*.psd
-*.ai
-*.indd
-*.prproj
-*.aep
-
 ### Node ###
 # Logs
 logs
@@ -18,6 +10,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
