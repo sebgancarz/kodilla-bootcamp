@@ -14,14 +14,15 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 h1,
 p {
   margin: 30px;
-  ;
 }
 
 h1 {
@@ -38,3 +39,4 @@ p {
 p::first-letter {
   font-weight: bold;
 }
+/*# sourceMappingURL=style.prefixed.css.map */
