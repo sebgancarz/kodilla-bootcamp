@@ -12,6 +12,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+#Folders
+dist/
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -130,6 +133,16 @@ Temporary Items
 
 ### Adobe ###
 *.psd
+
+### Packages ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
 # End of https://www.gitignore.io/api/adobe,node,osx,visualstudiocode
 
