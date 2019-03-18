@@ -5,7 +5,7 @@ sans-serif;
 $color-white: #fff;
 $color-yellow: #FDD135;
 $color-grey: #808080;
-
+$bg-grey: #F7F7F7;
 
 /* Global */
 
@@ -22,7 +22,7 @@ body {
 }
 
 section {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .section-title,
@@ -173,4 +173,71 @@ section {
 .paragraph {
   font-family: $font-serif;
   color: $color-grey;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: $bg-grey;
+}
+
+.portfolio-item {
+  max-width: 260px;
+  background-color: $color-white;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-description {
+  text-align: center;
+}
+
+.item-type {
+  font-family: $font-serif;
+  font-style: italic;
+  color: $color-grey;
+}
+
+/* Footer */
+
+.footer {
+  height: 100px;
+  padding: 20px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #212121;
+  border-radius: 50%;
+}
+
+.social-link {
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  color: $color-white;
 }
