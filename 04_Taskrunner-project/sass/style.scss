@@ -138,6 +138,7 @@ section {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-custom:hover {
@@ -147,7 +148,7 @@ section {
 /* Services */
 
 .services {
-  margin-top: 100vh;
+  margin-top: 90vh;
 }
 
 .service-image {
@@ -240,4 +241,39 @@ section {
   line-height: 40px;
   text-align: center;
   color: $color-white;
+}
+
+@media (min-width: 768px) {
+  .splash {
+    height: 60vh;
+  }
+
+  .inner-splash {
+    top: 50%;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
+
+  .page-subtitle {
+    font-size: 50px;
+  }
+
+  .services {
+    margin-top: 55vh;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .navbar,
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .wrapper {
+    justify-content: space-around;
+  }
 }
