@@ -1,0 +1,30 @@
+/* Services */
+
+.services {
+  margin-top: 90vh;
+}
+
+.service-image {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 3px solid $color-yellow;
+  border-radius: 50%;
+}
+
+.service-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.service-description,
+.paragraph {
+  text-align: center;
+}
+
+.paragraph {
+  font-family: $font-serif;
+  color: $color-grey;
+}

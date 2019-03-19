@@ -1,0 +1,32 @@
+/* Portfolio */
+.portfolio {
+  background-color: $bg-grey;
+}
+
+.portfolio-item {
+  max-width: 260px;
+  background-color: $color-white;
+  overflow: hidden;
+}
+
+.item-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-description {
+  text-align: center;
+}
+
+.item-type {
+  font-family: $font-serif;
+  font-style: italic;
+  color: $color-grey;
+}

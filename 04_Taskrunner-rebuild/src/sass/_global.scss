@@ -1,0 +1,33 @@
+/* Global */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-sans-serif;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.section-title,
+.section-paragraph {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.section-paragraph {
+  font-family: $font-serif;
+  color: $color-grey;
+  font-style: italic;
+}

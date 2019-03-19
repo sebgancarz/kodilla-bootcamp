@@ -4,17 +4,17 @@
   "main": "index.js",
   "scripts": {
     "init-project": "npm install && npm-run-all init:*",
-    "init:dirs": "mkdirp src/images src/js src/sass dist/css vendor",
+    "init:dirs": "mkdirp dist/css src/images src/js src/sass src/vendor",
     "init:files": "touch README.md index.html src/sass/style.scss src/js/script.js",
     "test": "npm run test:html",
     "test:html": "globstar nu-html-checker *.html",
     "build": "npm-run-all build:* test",
-    "build:sass": "node-sass --output-style compact -o dist/css/style.css src/sass/style.scss",
+    "build:sass": "node-sass --output-style compact -o dist/css src/sass/style.scss",
     "build:autoprefixer": "autoprefixer-cli dist/css/style.css",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
-    "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
+    "build-dev:sass": "node-sass --output-style expanded --source-map true -o dist/css src/sass",
     "watch": "npm-run-all build build-dev -p watch:*",
-    "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
+    "watch:browsersync": "browser-sync start --server --files \"dist/css/*.css\" \"*.html\"",
     "watch:sassprefixer": "onchange src/sass/*.scss -- npm run build-dev"
   },
   "keywords": [],
@@ -33,5 +33,6 @@
     "onchange": "5.2.0",
     "superagent": "4.1.0"
   },
+  "dependencies": {},
   "description": ""
 }
